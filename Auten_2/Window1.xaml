@@ -1,0 +1,21 @@
+﻿<Window x:Class="Auten_2.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Auten_2"
+        mc:Ignorable="d"
+        Title="Window1" Height="240" Width="440">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <GroupBox Header="Введите полученный код" FontSize="18" Width="260" Height="70" Margin="0,25">
+                <TextBox Name="Kod"></TextBox>
+            </GroupBox>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock FontSize="18" Width="160" Height="40" Margin="100,0,0,0">Время ввода кода:</TextBlock>
+                <TextBlock x:Name="Time_Kode" FontSize="18" Width="80" Height="40" ></TextBlock>
+            </StackPanel>
+            <Button x:Name="bb" FontSize="18" Width="180" Height="40" Click="bb_Click">Поверка</Button>
+        </StackPanel>
+    </Grid>
+</Window>
